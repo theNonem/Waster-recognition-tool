@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Waste Classifier</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>♻️ Smart Waste Classifier</h1>
+
+        <p class="subtitle">
+            Upload or capture an image of waste
+        </p>
+
+        <div class="camera-box">
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                capture="environment"
+            >
+
+            <label for="imageInput" class="upload-button">
+                📷 Take / Upload Image
+            </label>
+
+            <img id="preview" alt="Waste image preview">
+
+        </div>
+
+        <button id="classifyButton">
+            🔍 Classify Waste
+        </button>
+
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <p id="wasteType">Upload an image to begin.</p>
+            <p id="confidence"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
